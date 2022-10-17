@@ -82,17 +82,22 @@ list-style: none;
 
 .container{
     width: 1200px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     outline: 2px solid tomato;
+    
 }
-.header{
-    margin-top: 24px;
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* ------------HEDER------------ */
+.header {
+    padding-top: 24px;
     padding-bottom: 25px;
 }
-
-
-/* ------------HEDER------------ */
 
 .header-logo {
     font-family: 'Raleway', 'sans-serif';
@@ -156,7 +161,8 @@ background: var(--second-background-color)
 background: var(--hero-btn-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-cursor: pointer;
+margin: 0 auto;
+
 }
 
 .hero-btn:hover,
@@ -170,7 +176,6 @@ cursor: pointer;
 
 .advantage{
     padding-top: 182px;
-    padding-bottom: 94px;
 }
 .advantage-title{
         font-weight: 700;
@@ -187,15 +192,13 @@ cursor: pointer;
 
                 /* ------------PROJECTS---------- */
 
-.projects{
-    padding-bottom: 94px;
-}
     .projects-title{
             font-weight: 700;
             font-size: 36px;
             line-height: 1.17;
             text-align: center;
             color: var(--second-title-color);
+            margin-bottom: 50px;
     }
 
     /* ------------TEAM---------- */
@@ -231,6 +234,10 @@ cursor: pointer;
             color: var(--main-text-color);
     }
 
+.team-wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
         /* ------------FOOTER--------- */
 
 .address{
@@ -245,6 +252,8 @@ cursor: pointer;
         font-size: 26px;
         line-height: 1.19;
         color: var(--accent-color);
+        display: inline-block;
+        margin-bottom: 20px;
         }
        
         .address-logo-part{
@@ -259,6 +268,13 @@ cursor: pointer;
         .address-map:hover,
         .address-map:focus{
             color: var(--accent-color);}
+
+.address-item:not(:last-child)
+{
+    margin-bottom: 9px;
+    display: block;
+}
+
         .address-link{
             font-style: normal;
             line-height: 1.71;
@@ -269,6 +285,18 @@ cursor: pointer;
  color: var(--accent-color);}
 
  /* ------------PORTFOLIO-------- */
+ .current {
+     color: var(--accent-color);
+ }
+.header-porfolio{
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+        padding-bottom: 25px;
+}
+.filters{
+    margin-bottom: 34px;
+}
+
  .filters-btn{
     font-family: inherit;
         font-style: normal;
