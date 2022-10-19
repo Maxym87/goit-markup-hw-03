@@ -85,8 +85,6 @@ list-style: none;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid tomato;
-    
 }
 
 .section{
@@ -367,12 +365,13 @@ flex-basis: calc((100%-90px) / 4);
     flex-wrap: wrap;
 }
 .portfolio-item {
+    display: flex;
 background: var(--background-items-color);
-border: 1px solid #EEEEEE;
 flex-basis: calc((100%-60px) / 3);}
 
 .portfolio-wrap{
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 .portfolio-title{
 font-weight: 700;
