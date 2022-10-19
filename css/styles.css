@@ -363,11 +363,13 @@ flex-basis: calc((100%-90px) / 4);
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100%-60px) / 3);
 }
 .portfolio-item {
-    display: flex;
+display: flex;
 background: var(--background-items-color);
-flex-basis: calc((100%-60px) / 3);}
+}
 
 .portfolio-wrap{
     padding: 20px 24px;
