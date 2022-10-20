@@ -153,7 +153,9 @@ list-style: none;
 
 /* ------------HERO----------- */
 .hero {
-background: var(--second-background-color)
+background: var(--second-background-color);
+padding-top: 200px;
+padding-bottom: 200px;
 }
 
 .hero-title {
@@ -164,6 +166,8 @@ background: var(--second-background-color)
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--main-title-color);
+        max-width: 696px;
+        margin: 0 auto;
         margin-bottom: 30px;
 }
 
@@ -180,8 +184,10 @@ background: var(--second-background-color)
 background: var(--hero-btn-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 margin: 0 auto;
-
+padding: 10px 32px;
+min-width: 216px;
 }
 
 .hero-btn:hover,
@@ -190,23 +196,20 @@ margin: 0 auto;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
-.hero-wrap{
-    padding-top: 200px;
-    padding-bottom: 112px;
-}
 
         /* ------------ADVANTAGE----------- */
 
 .advantage{
-    padding-top: 182px;
+    padding-top: 94px;
 }
 
 .advantage-list{
     display: flex;
-        flex-wrap: wrap;
+    gap: 30px;
 }
+
 .advantage-item{
-flex-basis: calc((100%-90px) / 4);
+    flex-basis: calc((100% - 90px)/4);
 }
 .advantage-title{
         font-weight: 700;
@@ -247,6 +250,7 @@ flex-basis: calc((100%-90px) / 4);
             line-height: 1.17;
             text-align: center;
             color: var(--second-title-color);
+            margin-bottom: 50px;
     }
     .team-list{
         display: flex;
@@ -334,7 +338,7 @@ flex-basis: calc((100%-90px) / 4);
         padding-bottom: 25px;
 }
 .filters{
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -352,6 +356,7 @@ flex-basis: calc((100%-90px) / 4);
         border-radius: 4px;
         cursor: pointer;  
         border-color: transparent;  
+        padding: 6px 22px;
  }
  .filters-btn:hover,
 .filters-btn:focus{
@@ -364,16 +369,17 @@ flex-basis: calc((100%-90px) / 4);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100%-60px) / 3);
+    
 }
 .portfolio-item {
-display: flex;
+flex-basis: calc((100% - 60px) / 3);
 background: var(--background-items-color);
 }
 
 .portfolio-wrap{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 .portfolio-title{
 font-weight: 700;
